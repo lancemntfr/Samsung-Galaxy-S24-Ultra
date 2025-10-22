@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samsung Galaxy S24 Ultra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+
+        .black {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .font-size-big {
+            font-size: 48px;
+        }
+
+        .big-margin-top {
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+
+        .fullscreen-vid {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 0px;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        model-viewer {
+            background-color: white;
+            width: 400px;
+            height: 600px;
+            animation: float 3s ease-in-out infinite;
+            --poster-color: transparent;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0" style="background-color: black;">
+        <div style="background-color: white;">
+            <nav class="shadow p-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-9 px-4">
+                                <a href="https://www.samsung.com/ph">
+                                    <img src="assets/images/Samsung.png" alt="Samsung Logo" width="140" heigt="38">
+                                </a>
+                            </div>
+                            <div class="col-3 p-2">
+                                <div class="row">
+                                    <div class="col"><a href="#Home">Home</a></div>
+                                    <div class="col"><a href="#Buy">Buy</a></div>
+                                    <div class="col"><a href="#Menu">Menu</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row align-items-center big-margin-top p-5 my-5">
+                <div class="col-6 text-center">
+                    <div class="row">
+                        <div class="col font-size-big">
+                            <b>Galaxy S24 Ultra</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Buy now to get up to ₱28,500 worth of deals
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col">
+                            <div type="button" class="btn btn-outline-dark">Buy Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="assets/images/home-image-galaxy-s24.png" alt="Samsung Galaxy S24 Ultra"
+                        width="450" heigt="431">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center text-white">
+                <div class="row">
+                    <div class="col-12 mt-5 font-size-big">
+                        <b>Galaxy AI is here</b>
+                    </div>
+                    <div class="col-12 text-wrap my-3" style="text-align: center; max-width: 650px; margin: 0 auto;">
+                        <p>Welcome to the era of mobile AI. With Galaxy S24 Ultra in your hands, you can
+                            unleash
+                            whole
+                            new
+                            levels of creativity, productivity and possibility — starting with the most
+                            important
+                            device
+                            in
+                            your life. Your smartphone.
+                        </p>
+                    </div>
+                    <div class="col-12 my-4">
+                        <h5><b>Epic, just like that.</b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5 p-5 align-items-center g-5">
+            <div class="col mx-5">
+                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+                    <img class="card-img-top" src="assets/images/camera.jpg" alt="Camera">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3">Camera</h5>
+                        <p>For those who want the best night shots or image adjustment with AI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-5">
+                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+                    <img class="card-img-top" src="assets/images/display.jpg" alt="Display">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3">Display</h5>
+                        <p>A screen so bright and smooth, it redefines clarity and motion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+                    <img class="card-img-top" src="assets/images/performance.jpg" alt="Performance">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-3">Performance</h5>
+                        <p>Powerful, efficient, and built for those who do more every day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row big-margin-top">
+            <div class="col text-center text-white" style="font-size: 64px;">
+                <b>Sleek. Strong. Stunning</b>
+            </div>
+        </div>
+
+        <div class="fullscreen-vid">
+            <video autoplay muted loop playsinline class="bg-video" style="z-index: 1;">
+                <source src="assets/videos/video-galaxy-s24-ultra.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-12 text-wrap my-3" style="text-align: center; max-width: 650px; margin: 0 auto;">
+                <p>Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and
+                    a 6.8"
+                    flat
+                    display.6,7 It's an absolute marvel of design.
+                </p>
+            </div>
+        </div>
+
+        <div class="row p-5 m-5 big-margin-top text-white g-5">
+            <div class="col p-5 m-5 font-size-big text-left">
+                <b>Most powerful Quad Tele zoom yet</b>
+            </div>
+            <div class="col p-5 text-left">
+                <p>With the most megapixels on a smartphone and AI processing, Galaxy S24 Ultra sets the
+                    industry
+                    standard for image quality every time you hit the shutter. Now you can get 2x, 3x, 5x
+                    and even
+                    10x
+                    close-ups with optical or optical quality zoom. What's more, the new ProVisual engine
+                    recognizes objects — improving color tone, reducing noise and bringing out detail.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/first-galaxy-s24-ultra-highlights-quad-telephoto-06x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="First">
+                            <div class="carousel-caption d-none d-md-block text-light">
+                                <h2><b>0.6x zoom</b></h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/sec-galaxy-s24-ultra-highlights-quad-telephoto-1x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="Second">
+                            <div class="carousel-caption d-none d-md-block text-light">
+                                <h2><b>1x zoom</b></h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/third-galaxy-s24-ultra-highlights-quad-telephoto-2x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="Third">
+                            <div class="carousel-caption d-none d-md-block text-light">
+                                <h2><b>2x zoom</b></h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/fourth-galaxy-s24-ultra-highlights-quad-telephoto-3x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="Fourth">
+                            <div class="carousel-caption d-none d-md-block text-light">
+                                <h2><b>3x zoom</b></h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/fifth-galaxy-s24-ultra-highlights-quad-telephoto-5x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="Fifth">
+                            <div class="carousel-caption d-none d-md-block text-light">
+                                <h2><b>5x zoom</b></h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/sixth-galaxy-s24-ultra-highlights-quad-telephoto-10x-mo.jpg"
+                                class="d-block mx-auto img-fluid" alt="Sixth">
+                            <div class="carousel-caption d-none d-md-block text-black">
+                                <h2><b>10x zoom</b></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5 p-5">
+            <div class="col m-5 p-5 text-white">
+                <div class="row">
+                    <div class="col font-size-big">
+                        <b>Built-in S Pen writes a whole new chapter</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>The legacy of Galaxy Note is alive and well. Write, tap and navigate with precision your
+                            fingers wish they had on the new, flat display.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="assets/images/galaxy-s24-ultra-highlights-s-pen.jpg" alt="S Pen">
+            </div>
+        </div>
+
+        <div class="row m-5 p-5 min-vh-100 d-flex align-items-center justify-content-center text-center">
+            <div class="col-md-5 mb-4 mb-md-0">
+                <model-viewer src="assets/videos/3d-samsung_galaxy_s24_ultra.glb" alt="3D Phone" auto-rotate
+                    camera-controls disable-zoom rotation-per-second="15deg" shadow-intensity="1"
+                    style="background-color: black; width: 300px; height: 500px; border-radius: 15px;">
+                </model-viewer>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card rounded-3 bg-black text-white shadow-lg p-4">
+                    <h3 class="fw-bold mb-4 text-center">Samsung Galaxy S24 Ultra</h3>
+                    <ul class="list-unstyled mb-0 text-start">
+                        <li><strong>Display:</strong> 6.8-inch Dynamic AMOLED 2X, QHD+, 120Hz</li>
+                        <li><strong>Processor:</strong> Snapdragon 8 Gen 3 for Galaxy</li>
+                        <li><strong>RAM & Storage:</strong> 12GB RAM, 256GB / 512GB / 1TB</li>
+                        <li><strong>Rear Cameras:</strong> 200MP + 50MP + 10MP + 12MP</li>
+                        <li><strong>Front Camera:</strong> 12MP</li>
+                        <li><strong>Battery:</strong> 5000mAh, 45W fast + wireless charging</li>
+                        <li><strong>Build:</strong> Titanium frame, Gorilla Glass Armor, IP68</li>
+                        <li><strong>Software:</strong> Android 14, One UI 6.1 (7 years updates)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>
