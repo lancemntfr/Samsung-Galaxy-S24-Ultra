@@ -27,7 +27,7 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: clamp(12px, 3vw, 16px)
         }
 
         .black {
@@ -35,7 +35,7 @@
         }
 
         .font-size-big {
-            font-size: 48px;
+            font-size: clamp(28px, 5vw, 48px);
         }
 
         .big-margin-top {
@@ -44,8 +44,13 @@
         }
 
         .card {
-            width: 288px;
-            height: 320px;
+            width: 80%;
+            max-width: 288px;
+            height: auto;
+        }
+
+        .big-title{
+            font-size: clamp(25px, 5vw, 68px);
         }
 
         .fullscreen-vid {
@@ -93,7 +98,7 @@
 
     <div class="container-fluid p-0 bg-black">
         <header class="bg-white min-vh-100">
-            <nav class="shadow p-4">
+            <nav class="shadow p-md-4 p-2">
                 <div class="row">
                     <div class="col-md-6 col-sm-3 px-4 d-flex justify-content-sm-start justify-content-center">
                         <a href="https://www.samsung.com/ph">
@@ -101,71 +106,71 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-sm-9 p-2 text-sm-end text-center">
-                        <a href="#Home" class="mx-4">Home</a>
-                        <a href="#Buy" class="mx-4">Buy</a>
-                        <a href="#Menu" class="mx-4">Menu</a>
+                        <a href="#Home" class="mx-md-4 mx-2">Home</a>
+                        <a href="#Buy" class="mx-md-4 mx-2">Buy</a>
+                        <a href="#Menu" class="mx-md-4 mx-2">Menu</a>
                     </div>
                 </div>
             </nav>
 
             <div class="row align-items-center big-margin-top p-5 my-5">
-                <div class="col-lg-6 col-12 text-center d-flex flex-column align-items-center">
+                <div class="col-lg-6 col-12 text-center">
                     <h1 class="font-size-big">
                         <b>Galaxy S24 Ultra</b>
                     </h1>
-                    Buy now to get up to ₱28,500 worth of deals
-                    <div type="button" class="btn btn-outline-dark my-5">Buy Now</div>
+                    <p>Buy now to get up to ₱28,500 worth of deals</p>
+                    <div type="button" class="btn btn-outline-dark mb-5">Buy Now</div>
                 </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-center">
-                    <img class="img-fluid mb-lg-0 mb-5" src="assets/images/home-image-galaxy-s24.png" alt="Samsung Galaxy S24 Ultra"
+                <div class="col-lg-6 col-12 d-flex justify-content-center mb-lg-0 mb-5">
+                    <img class="img-fluid" src="assets/images/home-image-galaxy-s24.png" alt="Samsung Galaxy S24 Ultra"
                         width="450" heigt="431">
                 </div>
             </div>
         </header>
 
-        <div class="row mt-5 pt-5">
+        <div class="row mt-5 pt-2">
             <div class="col-12 text-center text-white">
                 <h1 class="font-size-big"><b>Galaxy AI is here</b></h1>
                 <div class="text-wrap" style="max-width: 650px; margin: 0 auto;">
-                    Welcome to the era of mobile AI. With Galaxy S24 Ultra in your hands, you can unleash whole new
+                    <p>Welcome to the era of mobile AI. With Galaxy S24 Ultra in your hands, you can unleash whole new
                     levels of creativity, productivity and possibility — starting with the most important device in 
-                    your life. Your smartphone.
+                    your life. Your smartphone.</p>
                 </div>
-                <h5 class="my-4 py-5">
+                <h5 class="py-5">
                     <b>Epic, just like that.</b>
                 </h5>
             </div>
         </div>
 
-        <div class="row my-5 py-5">
+        <div class="row my-lg-5 py-lg-5 my-2 py-2">
             <div class="col d-flex flex-lg-row flex-column gap-5 justify-content-center align-items-center">
                 <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/camera.jpg" alt="Camera">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Camera</h5>
-                        For those who want the best night shots or image adjustment with AI.
+                        <p>For those who want the best night shots or image adjustment with AI.</p>
                     </div>
                 </div>
                 <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/display.jpg" alt="Display">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Display</h5>
-                        A screen so bright and smooth, it redefines clarity and motion.
+                        <p>A screen so bright and smooth, it redefines clarity and motion.</p>
                     </div>
                 </div>
                 <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/performance.jpg" alt="Performance">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Performance</h5>
-                        Powerful, efficient, and built for those who do more every day.
+                        <p>Powerful, efficient, and built for those who do more every day.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row big-margin-top">
-            <div class="col text-center text-white" style="font-size: 64px;">
-                <b>Sleek. Strong. Stunning</b>
+            <div class="col text-center text-white" style="font-size: 68px;">
+                <b class="big-title no-wrap py-md-0 py-2">Sleek. Strong. Stunning</b>
             </div>
         </div>
 
