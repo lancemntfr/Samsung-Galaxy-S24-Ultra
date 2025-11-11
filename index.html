@@ -43,6 +43,11 @@
             margin-bottom: 150px;
         }
 
+        .card {
+            width: 288px;
+            height: 320px;
+        }
+
         .fullscreen-vid {
             position: relative;
             height: 100vh;
@@ -59,7 +64,7 @@
             min-height: 100%;
             transform: translate(-50%, -50%);
             object-fit: cover;
-            z-index: -1;
+            z-index: 1;
         }
 
         model-viewer {
@@ -86,8 +91,8 @@
 
 <body>
 
-    <div class="container-fluid p-0" style="background-color: black;">
-        <div style="background-color: white;">
+    <div class="container-fluid p-0 bg-black">
+        <header class="bg-white min-vh-100">
             <nav class="shadow p-4">
                 <div class="row">
                     <div class="col-md-6 col-sm-3 px-4 d-flex justify-content-sm-start justify-content-center">
@@ -112,62 +117,47 @@
                     <div type="button" class="btn btn-outline-dark my-5">Buy Now</div>
                 </div>
                 <div class="col-lg-6 col-12 d-flex justify-content-center">
-                    <img class="img-fluid" src="assets/images/home-image-galaxy-s24.png" alt="Samsung Galaxy S24 Ultra"
+                    <img class="img-fluid mb-lg-0 mb-5" src="assets/images/home-image-galaxy-s24.png" alt="Samsung Galaxy S24 Ultra"
                         width="450" heigt="431">
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="row mt-5">
+        <div class="row mt-5 pt-5">
             <div class="col-12 text-center text-white">
-                <div class="row">
-                    <div class="col-12 mt-5 font-size-big">
-                        <b>Galaxy AI is here</b>
-                    </div>
-                    <div class="col-12 text-wrap my-3" style="text-align: center; max-width: 650px; margin: 0 auto;">
-                        <p>Welcome to the era of mobile AI. With Galaxy S24 Ultra in your hands, you can
-                            unleash
-                            whole
-                            new
-                            levels of creativity, productivity and possibility — starting with the most
-                            important
-                            device
-                            in
-                            your life. Your smartphone.
-                        </p>
-                    </div>
-                    <div class="col-12 my-4">
-                        <h5><b>Epic, just like that.</b></h5>
-                    </div>
+                <h1 class="font-size-big"><b>Galaxy AI is here</b></h1>
+                <div class="text-wrap" style="max-width: 650px; margin: 0 auto;">
+                    Welcome to the era of mobile AI. With Galaxy S24 Ultra in your hands, you can unleash whole new
+                    levels of creativity, productivity and possibility — starting with the most important device in 
+                    your life. Your smartphone.
                 </div>
+                <h5 class="my-4 py-5">
+                    <b>Epic, just like that.</b>
+                </h5>
             </div>
         </div>
 
-        <div class="row m-5 p-5 align-items-center g-5">
-            <div class="col mx-5">
-                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+        <div class="row my-5 py-5">
+            <div class="col d-flex flex-lg-row flex-column gap-5 justify-content-center align-items-center">
+                <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/camera.jpg" alt="Camera">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Camera</h5>
-                        <p>For those who want the best night shots or image adjustment with AI.</p>
+                        For those who want the best night shots or image adjustment with AI.
                     </div>
                 </div>
-            </div>
-            <div class="col mx-5">
-                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+                <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/display.jpg" alt="Display">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Display</h5>
-                        <p>A screen so bright and smooth, it redefines clarity and motion.</p>
+                        A screen so bright and smooth, it redefines clarity and motion.
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card text-white bg-dark" style="width:18rem; height:20rem;">
+                <div class="card text-white bg-dark">
                     <img class="card-img-top" src="assets/images/performance.jpg" alt="Performance">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Performance</h5>
-                        <p>Powerful, efficient, and built for those who do more every day.</p>
+                        Powerful, efficient, and built for those who do more every day.
                     </div>
                 </div>
             </div>
@@ -180,7 +170,7 @@
         </div>
 
         <div class="fullscreen-vid">
-            <video autoplay muted loop playsinline class="bg-video" style="z-index: 1;">
+            <video autoplay muted loop playsinline class="bg-video">
                 <source src="assets/videos/video-galaxy-s24-ultra.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -188,11 +178,8 @@
 
         <div class="row text-white">
             <div class="col-12 text-wrap my-3" style="text-align: center; max-width: 650px; margin: 0 auto;">
-                <p>Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and
-                    a 6.8"
-                    flat
-                    display.6,7 It's an absolute marvel of design.
-                </p>
+                Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and a 6.8" flat
+                display.6,7 It's an absolute marvel of design.
             </div>
         </div>
 
