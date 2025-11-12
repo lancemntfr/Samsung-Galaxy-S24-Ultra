@@ -9,7 +9,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        html, body {
+        html,
+        body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -40,7 +41,6 @@
 
         .card {
             width: 80%;
-            max-width: 288px;
             height: auto;
         }
 
@@ -80,14 +80,15 @@
         <header class="bg-white min-vh-100">
             <nav class="shadow p-sm-4 p-2">
                 <div class="row">
-                    <div class="col-md-6 col-sm-3 px-4 pt-sm-0 pt-4 d-flex justify-content-sm-start justify-content-center">
+                    <div
+                        class="col-md-6 col-sm-3 px-4 pt-sm-0 pt-4 d-flex justify-content-sm-start justify-content-center">
                         <a href="https://www.samsung.com/ph">
                             <img src="assets/images/Samsung.png" alt="Samsung Logo" width="140" height="38">
                         </a>
                     </div>
                     <div class="col-md-6 col-sm-9 p-2 text-sm-end text-center">
                         <a href="#Home" class="mx-sm-4 mx-2">Home</a>
-                        <a href="#Buy" class="mx-sm-4 mx-2">Buy</a>
+                        <a href="#Shop" class="mx-sm-4 mx-2">Buy</a>
                         <a href="#Menu" class="mx-sm-4 mx-2">Menu</a>
                     </div>
                 </div>
@@ -124,21 +125,21 @@
 
         <div class="row my-lg-5 py-lg-5 my-2 py-2">
             <div class="col d-flex flex-lg-row flex-column gap-5 justify-content-center align-items-center">
-                <div class="card text-white bg-dark">
+                <div class="card text-white bg-dark" style="width: clamp(228px, 20vw, 288px);">
                     <img class="card-img-top" src="assets/images/camera.jpg" alt="Camera">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Camera</h5>
                         <p>For those who want the best night shots or image adjustment with AI.</p>
                     </div>
                 </div>
-                <div class="card text-white bg-dark">
+                <div class="card text-white bg-dark" style="width: clamp(228px, 20vw, 288px);">
                     <img class="card-img-top" src="assets/images/display.jpg" alt="Display">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Display</h5>
                         <p>A screen so bright and smooth, it redefines clarity and motion.</p>
                     </div>
                 </div>
-                <div class="card text-white bg-dark">
+                <div class="card text-white bg-dark" style="width: clamp(228px, 20vw, 288px);">
                     <img class="card-img-top" src="assets/images/performance.jpg" alt="Performance">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Performance</h5>
@@ -183,42 +184,42 @@
                     <div class="carousel-item active">
                         <img src="assets/images/first-galaxy-s24-ultra-highlights-quad-telephoto-06x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="First">
-                        <div class="carousel-caption d-none d-md-block text-light">
+                        <div class="carousel-caption d-none d-md-block text-light z-1">
                             <h2><b>0.6x zoom</b></h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/sec-galaxy-s24-ultra-highlights-quad-telephoto-1x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="Second">
-                        <div class="carousel-caption d-none d-md-block text-light">
+                        <div class="carousel-caption d-none d-md-block text-light z-1">
                             <h2><b>1x zoom</b></h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/third-galaxy-s24-ultra-highlights-quad-telephoto-2x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="Third">
-                        <div class="carousel-caption d-none d-md-block text-light">
+                        <div class="carousel-caption d-none d-md-block text-light z-1">
                             <h2><b>2x zoom</b></h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/fourth-galaxy-s24-ultra-highlights-quad-telephoto-3x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="Fourth">
-                        <div class="carousel-caption d-none d-md-block text-light">
+                        <div class="carousel-caption d-none d-md-block text-light z-1">
                             <h2><b>3x zoom</b></h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/fifth-galaxy-s24-ultra-highlights-quad-telephoto-5x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="Fifth">
-                        <div class="carousel-caption d-none d-md-block text-light">
+                        <div class="carousel-caption d-none d-md-block text-light z-1">
                             <h2><b>5x zoom</b></h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/sixth-galaxy-s24-ultra-highlights-quad-telephoto-10x-mo.jpg"
                             class="d-block mx-auto img-fluid" alt="Sixth">
-                        <div class="carousel-caption d-none d-md-block text-black">
+                        <div class="carousel-caption d-none d-md-block text-black z-1">
                             <h2><b>10x zoom</b></h2>
                         </div>
                     </div>
@@ -242,42 +243,77 @@
                 <p class="mt-4">The legacy of Galaxy Note is alive and well. Write, tap and navigate with precision your
                     fingers wish they had on the new, flat display.</p>
             </div>
-            <div class="col-12">
+            <div class="col-12 mb-5 pb-5">
                 <img class="img-fluid pe-md-5 me-md-5" src="assets/images/galaxy-s24-ultra-highlights-s-pen.jpg"
                     alt="S Pen">
             </div>
         </div>
 
-        <div class="row min-vh-100 d-flex align-items-center justify-content-center text-center">
-            <div class="col-md-5 mb-4 mb-md-0">
-                <model-viewer class="img-fluid" src="assets/videos/3d-samsung_galaxy_s24_ultra.glb" alt="3D Phone"
-                    auto-rotate camera-controls disable-zoom rotation-per-second="15deg" shadow-intensity="1"
-                    style="background-color: black; width: 300px; height: 500px; border-radius: 15px;">
+        <div class="row bg-white p-md-5 p-2">
+            <div class="col-lg-5 col-12 p-5">
+                <h1 class="font-size-big text-center pb-lg-0 pb-3"><b>Samsung Galaxy S24 Ultra</b></h1>
+                <model-viewer class="img-fluid bg-light w-100 mt-lg-4"
+                    src="assets/videos/3d-samsung_galaxy_s24_ultra.glb" alt="3D Phone" auto-rotate camera-controls
+                    disable-zoom rotation-per-second="15deg" shadow-intensity="1"
+                    style="width: 300px; height: 500px; border-radius: 15px;">
                 </model-viewer>
             </div>
-
-            <div class="col-md-5">
-                <div class="card rounded-3 bg-black text-white shadow-lg p-4">
-                    <h3 class="fw-bold mb-4 text-center">Samsung Galaxy S24 Ultra</h3>
+            <div class="col-lg-7 col-12 py-md-5 py-2 mb-md-0 mb-5">
+                <div class="card card-custom rounded-3 text-black shadow-lg p-4 mx-auto"
+                    style="width: clamp(200px, 60vw, 450px);">
+                    <h3 class="fw-bold my-4 pb-4 text-center">Device Specification</h3>
                     <ul class="list-unstyled mb-0 text-start">
                         <li><strong>Display:</strong> 6.8-inch Dynamic AMOLED 2X, QHD+, 120Hz</li>
+                        <hr>
                         <li><strong>Processor:</strong> Snapdragon 8 Gen 3 for Galaxy</li>
+                        <hr>
                         <li><strong>RAM & Storage:</strong> 12GB RAM, 256GB / 512GB / 1TB</li>
+                        <hr>
                         <li><strong>Rear Cameras:</strong> 200MP + 50MP + 10MP + 12MP</li>
+                        <hr>
                         <li><strong>Front Camera:</strong> 12MP</li>
+                        <hr>
                         <li><strong>Battery:</strong> 5000mAh, 45W fast + wireless charging</li>
+                        <hr>
                         <li><strong>Build:</strong> Titanium frame, Gorilla Glass Armor, IP68</li>
+                        <hr>
                         <li><strong>Software:</strong> Android 14, One UI 6.1 (7 years updates)</li>
+                        <hr>
+                        <li><strong>Connectivity:</strong> 5G, Wi-Fi 6E, Bluetooth 5.3, NFC</li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <div class="row bg-black text-center text-white">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 my-md-5 my-2 mt-5 text-center">
+                        <h1 class="font-size-big"><b>SAMSUNG</b></h1>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 ps-md-5 text-center text-md-start d-flex flex-md-row flex-column justify-content-center">
+                        <a heref="" class="mx-md-5 mx-0 my-md-0 my-2" style="color: white;">Home</a>
+                        <a heref="" class="mx-md-5 mx-0 my-md-0 my-2" style="color: white;">Shop</a>
+                        <a heref="" class="mx-md-5 mx-0 my-md-0 my-2" style="color: white;">Menu</a>
+                        <a heref="" class="mx-md-5 mx-0 my-md-0 my-2" style="color: white;">Support</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-md-5 mt-2 text-center">
+                        <p>© 2025 Designed by <b><a href="https://github.com/lancemntfr"
+                                    style="color: white;">lancemntfr</a></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 
 </html>
